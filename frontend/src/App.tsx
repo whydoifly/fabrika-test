@@ -65,7 +65,7 @@ function App() {
   return (
     <AppContainer>
       <ContentContainer>
-        <Title>Task List</Title>
+        <Title>Список задач</Title>
         <TaskForm onAddTask={handleAddTask} />
         <TaskList tasks={tasks} onToggleComplete={handleToggleComplete} />
       </ContentContainer>

@@ -57,7 +57,7 @@ export const TaskList = ({ tasks, onToggleComplete }: TaskListProps) => {
   return (
     <Container>
       <Section>
-        <SectionTitle>Tasks To Do ({incompleteTasks.length})</SectionTitle>
+        <SectionTitle>Предстоящие задачи ({incompleteTasks.length})</SectionTitle>
         <TasksContainer>
           {incompleteTasks.map(task => (
             <TaskItem key={task.id}>
@@ -74,7 +74,7 @@ export const TaskList = ({ tasks, onToggleComplete }: TaskListProps) => {
 
       {completedTasks.length > 0 && (
         <Section>
-          <SectionTitle>Completed Tasks ({completedTasks.length})</SectionTitle>
+          <SectionTitle>Выполненные задачи ({completedTasks.length})</SectionTitle>
           <TasksContainer>
             {completedTasks.map(task => (
               <TaskItem key={task.id} completed>

@@ -66,10 +66,10 @@ export const TaskForm = ({ onAddTask }: TaskFormProps) => {
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Enter new task..."
+          placeholder="Каков план?"
         />
         <Button type="submit">
-          Add Task
+          Добавить задачу
         </Button>
       </FormContainer>
     </Form>
